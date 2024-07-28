@@ -1,0 +1,75 @@
+#resources {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--color-bg1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#resources .title-rec h1, #resources .title-rec p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#resources .title-rec h1 {
+    font-family: var(--font-title);
+    color: var(--color-red);
+    font-size: 120px;
+    letter-spacing: 20px;
+}
+
+#resources .title-rec p {
+    color: white;
+}
+
+#resources .vantagens {
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    gap: 70px;
+}
+
+#resources .vantagens .suporte {
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.74);
+    margin-inline: 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#resources .vantagens .borda1, .borda2, .borda3 {
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    width: 300px;
+    height: 400px;
+}
+#resources .vantagens .suporte h2, .personalizacao h2, .flexibilidade h2 {
+    color: var(--color-red);
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+
+#resources .vantagens .personalizacao {
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.74);
+    margin-inline: 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#resources .vantagens .flexibilidade {
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.74);
+    margin-inline: 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#resources {
+    height: 900px;
+    margin-top: 100px;
+}

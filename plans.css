@@ -1,0 +1,212 @@
+
+.content-plans{
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
+    position: relative;
+    font-family: var(--font-text);
+    color: var(--color-white);
+    align-items: center;
+}
+.box-plan{
+    background-color: var(--color-box);
+    height: 280px;
+    width: 850px;
+    position: relative;
+    border-top-right-radius: 20px;
+}
+.info-plan{
+    background-color: var(--color-red);
+    width: 250px;
+    height: 250px;
+    border-top-right-radius: 140px;
+    border-bottom-left-radius: 80px;
+    position: absolute;
+    bottom: 1px;
+    left: -70px;
+}
+.content-boxes-plans div h3{
+    position: relative;
+}
+.content-boxes-plans div div:nth-child(1) p{
+    font-size: 16px;
+    bottom: 45px;
+    left: 40px;
+    position: relative;
+    letter-spacing: 3px;
+}
+.content-boxes-plans div div:nth-child(1) h1{
+    position: relative;
+    top: -5px;
+    left: 80px;
+    font-size: 55px;
+    letter-spacing: 6px;
+}
+.content-boxes-plans div div:nth-child(1) h2{
+    top: 40px;
+    left: 30px;
+    position: relative;
+    letter-spacing: 6px;
+    font-size: 32px;
+}
+.content-boxes-plans div div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.content-boxes-plans h3{
+    padding: 12px 0 1px 0;
+    border-bottom: 1px solid var(--color-red);
+    letter-spacing: 3px;
+}
+.content-boxes-plans ul{
+    height: 100px;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+    padding-top: 15px;
+    flex-direction: column;
+    font-size: 10px;
+    column-gap: 60px;
+    left: -130px;
+    position: relative;
+}
+.content-boxes-plans div:nth-child(3):not(.block){
+    width: 60px;
+    height: 40px;
+    background-color: var(--color-white);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    margin: 20px 30px 0 0;
+    right: 0;
+    top: 0;
+}
+.content-boxes-plans svg{
+    width: 25px;
+    height: 25px;
+}
+#plans{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    position: relative;
+    background-color: var(--color-bg1);
+}
+
+.title-plans{
+    width: 100px;
+    word-break: break-all;
+    display: flex;
+    justify-content: center;
+    font-size: 130px;
+    font-family: var(--font-title);
+    position: relative;
+    user-select: none;
+    top: -275px;
+}
+.title-plans h1{
+    width: 10px;
+    position: absolute;
+}
+.content-plans h4{
+    width: 800px;
+    font-size: 15px;
+    text-align: center;
+}
+.tgb1{
+    color: rgba(255, 255, 255, 0.05);
+    left: 80px;
+    position: relative;
+}
+.tgb2{
+    color: rgba(255, 255, 255, 0.15);
+    z-index: 2;
+    position: relative;
+}
+.tgb3{
+    right: 80px;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.tgb4{
+    right: 120px;
+    color: rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+.content-boxes-plans{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;   
+    position: relative;
+    transition: 300ms;
+    left: 0;
+}
+.block{
+    display: none;
+}
+#plans input[type="radio"]{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 35px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+#fm-month{
+    left: 305px;
+}
+#fm-year{
+    left: 445px;
+}
+.filter-menu label{
+    padding: 7px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    position: relative;
+    transition: 300ms;
+    cursor: pointer;
+}
+.filter-menu label:nth-child(1){
+    background: var(--color-red);
+}
+.filter-menu{
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+.cbp-year{
+    left: 1020px;
+    opacity: 0;
+    position: absolute;
+    top: 90px;
+}
+
+
+/* ANIMATIONS
+ANIMATIONS */
+
+#fm-year:checked ~ .cbp-year{
+    left: 0;
+    opacity: 1;
+}
+#fm-year:checked ~ .cbp-month{
+    left: 1020px;
+    opacity: 0;
+    transition: 300ms;
+}
+#fm-year:checked ~ .filter-menu label:nth-child(2){
+    background: var(--color-red);
+}
+#fm-year:checked ~ .filter-menu label:nth-child(1){
+    background: transparent;
+}
